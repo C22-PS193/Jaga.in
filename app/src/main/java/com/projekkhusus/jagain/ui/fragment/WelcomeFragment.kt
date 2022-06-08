@@ -9,7 +9,7 @@ import androidx.navigation.fragment.findNavController
 import com.projekkhusus.jagain.R
 import com.projekkhusus.jagain.databinding.FragmentWelcomeBinding
 
-class WelcomeFragment : Fragment() {
+class WelcomeFragment : Fragment(), View.OnClickListener {
 
     private var _binding: FragmentWelcomeBinding? = null
     private val binding get() = _binding!!
@@ -26,8 +26,9 @@ class WelcomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         activity?.let {
-            binding.tvWelcome.setOnClickListener {
-                findNavController().navigate(R.id.action_welcomeFragment_to_loginFragment)
+            with(binding) {
+                button3.setOnClickListener(this@WelcomeFragment)
+                button4.setOnClickListener(this@WelcomeFragment)
             }
         }
     }
@@ -35,5 +36,12 @@ class WelcomeFragment : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+    }
+
+    override fun onClick(view: View) {
+        when(view.id) {
+            R.id.button3 -> findNavController().navigate(R.id.action_welcomeFragment_to_loginFragment)
+            R.id.button4 -> findNavController().navigate(R.id.action_welcomeFragment_to_registerFragment)
+        }
     }
 }

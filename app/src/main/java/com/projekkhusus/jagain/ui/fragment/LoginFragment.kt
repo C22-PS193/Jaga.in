@@ -9,7 +9,7 @@ import androidx.navigation.fragment.findNavController
 import com.projekkhusus.jagain.R
 import com.projekkhusus.jagain.databinding.FragmentLoginBinding
 
-class LoginFragment : Fragment() {
+class LoginFragment : Fragment(), View.OnClickListener {
 
     private var _binding: FragmentLoginBinding? = null
     private val binding get() = _binding!!
@@ -26,8 +26,9 @@ class LoginFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         activity?.let {
-            binding.tvLogin.setOnClickListener {
-                findNavController().navigate(R.id.action_loginFragment_to_registerFragment)
+            with(binding) {
+                button5.setOnClickListener(this@LoginFragment)
+                textView6.setOnClickListener(this@LoginFragment)
             }
         }
     }
@@ -35,5 +36,12 @@ class LoginFragment : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+    }
+
+    override fun onClick(view: View) {
+        when (view.id) {
+//            R.id.button5 -> findNavController().navigate(R.id.action)
+            R.id.textView6 -> findNavController().navigate(R.id.action_loginFragment_to_registerFragment)
+        }
     }
 }
