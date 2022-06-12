@@ -40,7 +40,7 @@ class LoginFragment : Fragment(), View.OnClickListener {
 
     override fun onClick(view: View) {
         when (view.id) {
-//            R.id.button5 -> findNavController().navigate(R.id.action)
+            R.id.button5 -> findNavController().navigate(R.id.action_loginFragment_to_nav_home)
             R.id.textView6 -> findNavController().navigate(R.id.action_loginFragment_to_registerFragment)
         }
     }
