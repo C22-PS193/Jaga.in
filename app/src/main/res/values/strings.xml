@@ -6,4 +6,7 @@
     <string name="dashboard">Dashboard</string>
     <string name="explore">Explore</string>
     <string name="home">Home</string>
+    <string name="txtsatu">Kamu sibuk bekerja ?\n</string>
+    <string name="txtdua">Kami tau solusi terbaik untuk masalahmu\n</string>
+    <string name="rekomendasi">Rekomendasi babysitter untukmu</string>
 </resources>

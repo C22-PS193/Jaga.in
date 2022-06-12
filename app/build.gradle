@@ -51,5 +51,5 @@ dependencies {
     implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
 
     //Circle Image View
-    implementation "de.hdodenhof:circleimageview:$circle_image_view_version"
+    implementation "de.hdodenhof:circleimageview:3.1.0"
 }

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.DetailFragment">
+
+   <ImageView
+       android:id="@+id/image1"
+       android:layout_width="110dp"
+       android:layout_height="110dp"
+       android:layout_marginTop="48dp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.086"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       tools:src="@tools:sample/avatars" />
+
+   <TextView
+       android:id="@+id/textName"
+       android:layout_width="96dp"
+       android:layout_height="27dp"
+       android:layout_marginTop="56dp"
+       android:gravity="top"
+       android:text="Anne Bern"
+       android:textColor="@color/black"
+       android:textSize="18sp"
+       android:textStyle="bold"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.117"
+       app:layout_constraintStart_toEndOf="@+id/image1"
+       app:layout_constraintTop_toTopOf="parent" />
+
+   <TextView
+       android:id="@+id/textPlace"
+       android:layout_width="182dp"
+       android:layout_height="21dp"
+       android:layout_marginTop="92dp"
+       android:gravity="top"
+       android:text="Yayasan Amal Kasih Anak"
+       android:textColor="@color/black"
+       android:textSize="14sp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.19"
+       app:layout_constraintStart_toEndOf="@+id/image1"
+       app:layout_constraintTop_toTopOf="parent" />
+
+   <TextView
+       android:id="@+id/textCity"
+       android:layout_width="101dp"
+       android:layout_height="17dp"
+       android:layout_marginTop="132dp"
+       android:gravity="top"
+       android:text="Jakarta, Indonesia"
+       android:textColor="@color/black"
+       android:textSize="11sp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.109"
+       app:layout_constraintStart_toEndOf="@+id/image1"
+       app:layout_constraintTop_toTopOf="parent" />
+
+   <com.google.android.material.floatingactionbutton.FloatingActionButton
+       android:layout_width="wrap_content"
+       android:id="@+id/floating1"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="560dp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.918"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       android:src="@drawable/ic_add"/>
+
+   <com.google.android.material.floatingactionbutton.FloatingActionButton
+       android:id="@+id/floating2"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="644dp"
+       android:src="@drawable/ic_like"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.918"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
